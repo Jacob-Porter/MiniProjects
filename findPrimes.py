@@ -8,13 +8,12 @@ def isDecimal(input):
             return False
                 
 def isPrime(x): 
-    if x == 0 or x == 1: 
-        return False
-    else:
-        for i in range(1,x):
-            if (x - i > 1) and not isDecimal(str(x / (x - i))):
+    if x > 1:
+        for i in range(2,x):
+            if (x % i == 0):
                 return False
         return True
+    return False
 
 while running:
     n = input('Enter value or "Exit" to stop program - ')
