@@ -1,12 +1,5 @@
 running = True
-lengthOfFloat = 3
 
-def isDecimal(input):
-            dot = str(input).index('.') + 1
-            if str(input[dot:dot+1]) != '0' or len(str(input)) > lengthOfFloat:
-                return True
-            return False
-                
 def isPrime(x): 
     if x > 1:
         for i in range(2,x):
